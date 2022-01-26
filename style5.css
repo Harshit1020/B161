@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#main {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+}
+
+#left {
+	width: 30%;
+	height: 100%;
+	background-color: rgb(194, 151, 136);
+}
+
+#center {
+	background-image: url(https://images.unsplash.com/photo-1642980073043-4c92035558b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+	height: 100%;
+}
+
+#right {
+	position: relative;
+	background-position: center;
+	width: 20%;
+	height: 100%;
+}
+
+#right #rtop {
+	background-image: url(https://images.unsplash.com/photo-1642980074321-98d81ca7c2e4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60);
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 100%;
+	height: 80%;
+}
+
+#right #rbtm {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	background-color: #fff;
+	top: 90%;
+	left: 0;
+	transform: translate(0%, -50%);
+}
+
+#text {
+	line-height: 100px;
+	font-family: "Anton";
+	gap: 200px;
+	font-size: 50px;
+	color: white;
+	position: absolute;
+	top: 15%;
+	left: 13%;
+}
+
+#rbtm h1 {
+	font-family: "Anton";
+	position: absolute;
+	top: 40%;
+	left: 25%;
+}
+
+#line {
+	border-top: .3px solid rgba(255, 255, 255, 0.712);
+	border-bottom: .3px solid rgba(219, 200, 200, 0.705);
+	width: 100%;
+	height: 35px;
+	position: absolute;
+	top: 70%;
+	left: 0%;
+	transform: translate(0, -50%);
+	z-index: 99;
+}
+#line #one {
+	position: absolute;
+	top: 15px;
+	left: 200px;
+	font-size: 5px;
+	letter-spacing: 6px;
+	color: #fff;
+}
+
+#line #two {
+	position: absolute;
+	top: 15px;
+	right: 150px;
+	font-size: 5px;
+	letter-spacing: 6px;
+	color: #fff;
+}
+
+#circle {
+	position: absolute;
+	background-color: transparent;
+	width: 120px;
+	height: 120px;
+	top: 25%;
+	left: 65%;
+	border-radius: 50%;
+	border-top: .3px solid rgba(255, 255, 255, 0.712);
+	border-bottom: .3px solid rgba(255, 255, 255, 0.712);
+	border-left: .3px solid rgba(255, 255, 255, 0.712);
+	border-right:.3px solid rgba(255, 255, 255, 0.712); 
+}
+
+#circle #d {
+	position: absolute;
+	top: 60px;
+	left: 30px;
+	font-size: 10px;
+	color: rgba(255, 255, 255, 0.712);
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+
+#anna {
+	position: absolute;
+	bottom: 2%;
+	color: #fff;
+	font-family: "Anton";
+	left: 100px;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+
+#jem {
+	position: absolute;
+	bottom: 5%;
+	left: 35%;
+	color: #fff;
+	s: "Anton";
+	letter-spacing: 5px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+#circle:hover {
+	background-color: rgba(0, 0, 0, 0.493);
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#line:hover {
+	background-color: rgba(0, 0, 0, 0.493);
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+#left #text h1:hover {
+	color: rgba(0, 0, 0, 0.5);
+	-webkit-text-stroke: black .2px;
+	cursor: pointer;
+	 font-style: italic;
+}
+
+#right #rbtm:hover {
+	color: ;
+	background-color: rgb(194, 151, 136);
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) .3s;
+	font-style: italic;
+}
+
+#right #rbtm h1:hover {
+	color: #fff;
+}
